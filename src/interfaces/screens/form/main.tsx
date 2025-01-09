@@ -30,7 +30,7 @@ const ScreenForm = () => {
 				<iframe
 					title="mataraman dev"
 					src={ENV.URL.FORM_REGISTRATION}
-					className={cn("w-full h-[90vh]", isLoading && "hidden")}
+					className={cn("w-full h-[80vh]", isLoading && "hidden")}
 					onLoad={() => setIsLoading(false)}
 				/>
 			</div>

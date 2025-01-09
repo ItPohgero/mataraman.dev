@@ -6,6 +6,7 @@ import { useRouter } from "@/hooks/func/use_router";
 import CFooter from "@/interfaces/components/cs/footer";
 import { Button } from "@/interfaces/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import Benefit from "./modules/benefit";
 import { MemberDedicated } from "./modules/member-dedicated";
@@ -48,6 +49,27 @@ const ScreenMain = () => {
 							<AppIcon icon="shield-user" className="text-white" />
 							<span>Gabung Komunitas</span>
 						</Button>
+						<Link
+							href={PATH.URL.TELEGRAM}
+							target="_blank"
+							className="bg-neutral-100 hover:bg-neutral-200 duration-300 p-2 rounded-lg h-10 w-10 flex justify-center items-center"
+						>
+							<AppIcon icon="telegram" className="w-5 h-5" />
+						</Link>
+						<Link
+							href={PATH.URL.WHATSAPP}
+							target="_blank"
+							className="bg-neutral-100 hover:bg-neutral-200 duration-300 p-2 rounded-lg h-10 w-10 flex justify-center items-center"
+						>
+							<AppIcon icon="whatsapp" className="w-5 h-5" />
+						</Link>
+						<Link
+							href={PATH.URL.INSTAGRAM}
+							target="_blank"
+							className="bg-neutral-100 hover:bg-neutral-200 duration-300 p-2 rounded-lg h-10 w-10 flex justify-center items-center"
+						>
+							<AppIcon icon="instagram" className="w-5 h-5" />
+						</Link>
 					</div>
 				</div>
 				<MemberDedicated />

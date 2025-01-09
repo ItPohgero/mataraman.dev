@@ -16,6 +16,7 @@ export const ICON_CONFIG = {
 	airbuds: "solar:airbuds-case-charge-line-duotone",
 	"arrow-right": "solar:alt-arrow-right-line-duotone",
 	"arrow-left": "solar:alt-arrow-left-line-duotone",
+	instagram: "iconoir:instagram",
 } as const;
 
 export type IconType = keyof typeof ICON_CONFIG;

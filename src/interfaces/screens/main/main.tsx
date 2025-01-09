@@ -4,10 +4,17 @@ import { PATH } from "@/constant/path";
 import AppIcon from "@/hooks/func/use_icon";
 import { useRouter } from "@/hooks/func/use_router";
 import CFooter from "@/interfaces/components/cs/footer";
+import { List } from "@/interfaces/components/cs/list";
 import { Button } from "@/interfaces/components/ui/button";
+import {
+	Tooltip,
+	TooltipContent,
+	TooltipProvider,
+	TooltipTrigger,
+} from "@/interfaces/components/ui/tooltip";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { Fragment } from "react";
 import Benefit from "./modules/benefit";
 import { MemberDedicated } from "./modules/member-dedicated";
 
@@ -40,9 +47,9 @@ const ScreenMain = () => {
 							Sragen dan Sekitarnya
 						</div>
 					</div>
-					<div className="flex justify-center mt-10 w-max mx-auto gap-4 cursor-pointer">
+					<div className="flex justify-center mt-10 w-max mx-auto gap-2 cursor-pointer">
 						<Button
-							className="rounded-full bg-orange-500"
+							className="rounded-xl bg-orange-500"
 							size="lg"
 							onClick={() => router.push(PATH.FORM)}
 						>
@@ -52,32 +59,85 @@ const ScreenMain = () => {
 						<Link
 							href={PATH.URL.TELEGRAM}
 							target="_blank"
-							className="bg-neutral-100 hover:bg-neutral-200 duration-300 p-2 rounded-lg h-10 w-10 flex justify-center items-center"
+							className="bg-neutral-100 hover:bg-neutral-200 duration-300 p-2 rounded-xl h-10 w-10 flex justify-center items-center"
 						>
 							<AppIcon icon="telegram" className="w-5 h-5" />
 						</Link>
 						<Link
 							href={PATH.URL.WHATSAPP}
 							target="_blank"
-							className="bg-neutral-100 hover:bg-neutral-200 duration-300 p-2 rounded-lg h-10 w-10 flex justify-center items-center"
+							className="bg-neutral-100 hover:bg-neutral-200 duration-300 p-2 rounded-xl h-10 w-10 flex justify-center items-center"
 						>
 							<AppIcon icon="whatsapp" className="w-5 h-5" />
 						</Link>
 						<Link
 							href={PATH.URL.INSTAGRAM}
 							target="_blank"
-							className="bg-neutral-100 hover:bg-neutral-200 duration-300 p-2 rounded-lg h-10 w-10 flex justify-center items-center"
+							className="bg-neutral-100 hover:bg-neutral-200 duration-300 p-2 rounded-xl h-10 w-10 flex justify-center items-center"
 						>
 							<AppIcon icon="instagram" className="w-5 h-5" />
 						</Link>
 					</div>
 				</div>
 				<MemberDedicated />
-				<div className="mt-20">
-					<h2 className="font-bold text-xl text-center mb-4">
-						Manfaat Gabung Komunitas
-					</h2>
+				<div>
 					<Benefit />
+				</div>
+				<div className="mt-10">
+					<h2 className="font-bold text-xl text-center mb-4">
+						Dukungan Komunitas Dan Platform
+					</h2>
+					<div className="flex justify-center gap-x-2">
+						<List
+							data={[
+								{
+									logo: "https://bandungdev.com/images/logos/svg/bandungdev-logo-white.svg",
+									label: "BandungDev",
+									url: "https://bandungdev.com",
+								},
+								{
+									logo: ASSETS.PUBLIC.LOGO,
+									label: "IT Pohgero",
+									url: "https://itpohgero.com",
+								},
+								{
+									logo: ASSETS.PUBLIC.LOGO_PEMUDA_KREATIF,
+									label: "Pemuda Kreatif Ponorogo",
+									url: "https://pemudakreatifponorogo.com",
+								},
+								{
+									logo: ASSETS.PUBLIC.LOGO_MRIKI,
+									label: "Mriki",
+									url: "https://mriki.id",
+								},
+							]}
+							render={(e) => (
+								<Fragment>
+									<TooltipProvider>
+										<Tooltip>
+											<TooltipTrigger>
+												<Link
+													href={e?.url}
+													target="_blank"
+													className="w-[40px] aspect-square flex justify-center items-center"
+												>
+													<Image
+														src={e?.logo}
+														alt={e?.label}
+														width={30}
+														height={30}
+													/>
+												</Link>
+											</TooltipTrigger>
+											<TooltipContent>
+												<span>{e?.label}</span>
+											</TooltipContent>
+										</Tooltip>
+									</TooltipProvider>
+								</Fragment>
+							)}
+						/>
+					</div>
 				</div>
 			</div>
 			<CFooter />

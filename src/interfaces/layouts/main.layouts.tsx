@@ -6,7 +6,7 @@ import { MenuInlineOnLeft } from "./modules/menu-inline-on-left";
 const MainLayouts: FC<PropsWithChildren> = ({ children }) => {
 	return (
 		<Fragment>
-			<nav className="py-2 px-4 bg-white/80 backdrop-blur text-neutral-800 sticky top-0 left-0 w-full h-14 border-b-[0.5px] flex items-center z-[10000]">
+			<nav className="py-2 px-4 bg-white/80 backdrop-blur text-neutral-800 sticky top-0 left-0 w-full h-14 border-b-[0.5px] flex items-center z-50">
 				<div className="max-w-6xl mx-auto flex justify-between items-center w-full">
 					<div className="flex justify-start items-center gap-x-4">
 						<Link href={PATH.ROOT}>

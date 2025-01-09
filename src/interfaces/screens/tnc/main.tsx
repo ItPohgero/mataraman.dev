@@ -2,7 +2,7 @@ import React from "react";
 
 const ScreenTNC = () => {
 	return (
-		<div className="max-w-4xl mx-auto p-6 text-justify pb-20">
+		<div className="max-w-4xl mx-auto py-6 px-4 text-justify pb-20">
 			<h1 className="text-2xl font-bold mb-4">Syarat dan Ketentuan</h1>
 			<p>
 				Selamat datang di komunitas <strong>MataramanDev</strong> dengan

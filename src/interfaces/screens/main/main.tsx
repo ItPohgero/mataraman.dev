@@ -21,7 +21,7 @@ import { MemberDedicated } from "./modules/member-dedicated";
 const ScreenMain = () => {
 	const router = useRouter();
 	return (
-		<div>
+		<div className="px-4">
 			<div className="pt-20 lg:pt-52">
 				<div>
 					<div className="flex justify-center">

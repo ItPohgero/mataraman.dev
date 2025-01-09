@@ -17,7 +17,7 @@ const MainLayouts: FC<PropsWithChildren> = ({ children }) => {
 				</div>
 			</nav>
 			<main className="w-screen bg-white">
-				<main className="max-w-6xl mx-auto px-4">{children}</main>
+				<main className="max-w-6xl mx-auto">{children}</main>
 			</main>
 		</Fragment>
 	);

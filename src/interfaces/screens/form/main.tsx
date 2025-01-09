@@ -7,7 +7,7 @@ const ScreenForm = () => {
 	const [isLoading, setIsLoading] = useState<boolean>(true);
 	return (
 		<Fragment>
-			<div className="max-w-3xl mx-auto">
+			<div className="max-w-2xl mx-auto">
 				{isLoading && (
 					<div className="flex items-center justify-center min-h-screen">
 						<p>loading...</p>
@@ -16,7 +16,7 @@ const ScreenForm = () => {
 				<iframe
 					title="mataraman dev"
 					src={ENV.URL.FORM_REGISTRATION}
-					className={cn("w-full min-h-screen", isLoading && "hidden")}
+					className={cn("w-full h-[90vh]", isLoading && "hidden")}
 					onLoad={() => setIsLoading(false)}
 				/>
 			</div>

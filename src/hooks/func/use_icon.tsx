@@ -12,6 +12,8 @@ export const ICON_CONFIG = {
 	download: "solar:download-square-line-duotone",
 	"shield-user": "solar:shield-user-line-duotone",
 	info: "solar:info-circle-broken",
+	"users-group": "solar:users-group-rounded-line-duotone",
+	airbuds: "solar:airbuds-case-charge-line-duotone",
 } as const;
 
 export type IconType = keyof typeof ICON_CONFIG;

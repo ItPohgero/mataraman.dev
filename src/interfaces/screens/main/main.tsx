@@ -7,6 +7,7 @@ import { Button } from "@/interfaces/components/ui/button";
 import Image from "next/image";
 import React from "react";
 import Benefit from "./modules/benefit";
+import { MemberDedicated } from "./modules/member-dedicated";
 
 const ScreenMain = () => {
 	const router = useRouter();
@@ -48,6 +49,7 @@ const ScreenMain = () => {
 						</Button>
 					</div>
 				</div>
+				<MemberDedicated />
 				<div className="mt-20">
 					<h2 className="font-bold text-xl text-center mb-4">
 						Manfaat Gabung Komunitas

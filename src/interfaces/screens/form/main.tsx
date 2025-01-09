@@ -56,7 +56,6 @@ const ScreenForm = () => {
 						onLoad={() => setIsLoading(false)}
 					/>
 				</div>
-				<div className="h-[10vh] bg-gradient-to-t from-neutral-400 to-transparent pointer-events-none" />
 			</div>
 		</Fragment>
 	);

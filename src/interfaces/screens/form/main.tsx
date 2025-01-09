@@ -30,10 +30,11 @@ const ScreenForm = () => {
 				<iframe
 					title="mataraman dev"
 					src={ENV.URL.FORM_REGISTRATION}
-					className={cn("w-full h-screen", isLoading && "hidden")}
+					className={cn("w-full h-[90vh]", isLoading && "hidden")}
 					onLoad={() => setIsLoading(false)}
 				/>
 			</div>
+			<div className="h-[10vh] bg-gradient-to-t from-neutral-400 to-transparent" />
 		</Fragment>
 	);
 };

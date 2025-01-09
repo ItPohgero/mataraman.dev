@@ -108,7 +108,7 @@ const ScreenMain = () => {
 								{
 									logo: ASSETS.PUBLIC.LOGO_MRIKI,
 									label: "Mriki",
-									url: "https://mriki.id",
+									url: "https://itpohgero.com",
 								},
 							]}
 							render={(e) => (

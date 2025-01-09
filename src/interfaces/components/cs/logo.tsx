@@ -12,7 +12,7 @@ const CLogo = () => {
 				width={20}
 				height={20}
 			/>
-			<span className="text-lg font-bold">mataraman.dev</span>
+			<span className="text-lg font-bold hidden lg:block">mataraman.dev</span>
 		</div>
 	);
 };

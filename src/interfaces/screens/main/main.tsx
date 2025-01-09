@@ -1,7 +1,7 @@
 import React from "react";
 
 const ScreenMain = () => {
-	return <div>ScreenMain</div>;
+	return <div>asd</div>;
 };
 
 export default ScreenMain;

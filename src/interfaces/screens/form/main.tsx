@@ -1,3 +1,4 @@
+import { ENV } from "@/configs/environment";
 import React, { Fragment } from "react";
 
 const ScreenForm = () => {
@@ -6,7 +7,7 @@ const ScreenForm = () => {
 			<div className="max-w-3xl mx-auto">
 				<iframe
 					title="mataraman dev"
-					src="https://tally.so/embed/w4ALdb"
+					src={ENV.URL.FORM_REGISTRATION}
 					className="w-full min-h-screen"
 				/>
 			</div>

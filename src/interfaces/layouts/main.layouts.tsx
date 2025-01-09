@@ -1,7 +1,6 @@
 import { PATH } from "@/constant/path";
 import Link from "next/link";
 import React, { Fragment, type FC, type PropsWithChildren } from "react";
-import CFooter from "../components/cs/footer";
 import CLogo from "../components/cs/logo";
 import { MenuInlineOnLeft } from "./modules/menu-inline-on-left";
 import { MenuInlineOnRight } from "./modules/menu-inline-on-right";
@@ -21,9 +20,8 @@ const MainLayouts: FC<PropsWithChildren> = ({ children }) => {
 					</div>
 				</div>
 			</nav>
-			<main className="w-screen min-h-screen bg-white">
+			<main className="w-screen bg-white">
 				<main className="max-w-6xl mx-auto px-4">{children}</main>
-				<CFooter />
 			</main>
 		</Fragment>
 	);

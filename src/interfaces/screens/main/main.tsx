@@ -3,6 +3,7 @@ import { ASSETS } from "@/constant/assets";
 import { PATH } from "@/constant/path";
 import AppIcon from "@/hooks/func/use_icon";
 import { useRouter } from "@/hooks/func/use_router";
+import CFooter from "@/interfaces/components/cs/footer";
 import { Button } from "@/interfaces/components/ui/button";
 import Image from "next/image";
 import React from "react";
@@ -57,6 +58,7 @@ const ScreenMain = () => {
 					<Benefit />
 				</div>
 			</div>
+			<CFooter />
 		</div>
 	);
 };

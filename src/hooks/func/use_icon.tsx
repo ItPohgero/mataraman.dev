@@ -14,6 +14,8 @@ export const ICON_CONFIG = {
 	info: "solar:info-circle-broken",
 	"users-group": "solar:users-group-rounded-line-duotone",
 	airbuds: "solar:airbuds-case-charge-line-duotone",
+	"arrow-right": "solar:alt-arrow-right-line-duotone",
+	"arrow-left": "solar:alt-arrow-left-line-duotone",
 } as const;
 
 export type IconType = keyof typeof ICON_CONFIG;

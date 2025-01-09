@@ -27,18 +27,32 @@ export function MenuInlineOnLeft() {
 				<BreadcrumbItem className="mr-2">
 					<BreadcrumbLink href={PATH.TNC}>Term & Cond</BreadcrumbLink>
 				</BreadcrumbItem>
-				<AppIcon icon="download" />
 				<BreadcrumbItem className="mr-2">
 					<DropdownMenu>
 						<DropdownMenuTrigger className="flex items-center gap-1">
 							<BreadcrumbEllipsis className="h-4 w-4" />
 						</DropdownMenuTrigger>
-						<DropdownMenuContent align="start">
+						<DropdownMenuContent
+							align="start"
+							className="rounded-xl border-[0.5px]"
+						>
 							<DropdownMenuItem>
-								<Link href={PATH.URL.EVENT}>Event</Link>
+								<Link
+									href={PATH.URL.EVENT}
+									className="flex justify-start items-center gap-x-2"
+								>
+									<AppIcon icon="arrow-right" />
+									<span>Event</span>
+								</Link>
 							</DropdownMenuItem>
 							<DropdownMenuItem>
-								<Link href={PATH.URL.QNA}>Tanya Jawab</Link>
+								<Link
+									href={PATH.URL.QNA}
+									className="flex justify-start items-center gap-x-2"
+								>
+									<AppIcon icon="arrow-right" />
+									<span>Tanya Jawab</span>
+								</Link>
 							</DropdownMenuItem>
 						</DropdownMenuContent>
 					</DropdownMenu>

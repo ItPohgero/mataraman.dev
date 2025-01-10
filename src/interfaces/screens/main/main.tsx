@@ -90,11 +90,11 @@ const ScreenMain = () => {
 					<div className="flex justify-center gap-x-2">
 						<List
 							data={[
-								// {
-								// 	logo: "https://bandungdev.com/images/logos/svg/bandungdev-logo-white.svg",
-								// 	label: "BandungDev",
-								// 	url: "https://bandungdev.com",
-								// },
+								{
+									logo: "https://bandungdev.com/images/logos/svg/bandungdev-logo-white.svg",
+									label: "BandungDev",
+									url: "https://bandungdev.com",
+								},
 								{
 									logo: ASSETS.PUBLIC.LOGO,
 									label: "IT Pohgero",

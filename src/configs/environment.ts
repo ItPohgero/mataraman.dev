@@ -4,6 +4,6 @@ export const ENV = {
 	},
 	CONTACT: {
 		PHONE: "+6281331419332",
-		MAIL: "info@mataraman.dev",
+		MAIL: "mataramandev.info@gmail.com",
 	},
 };
